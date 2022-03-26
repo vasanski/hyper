@@ -54,13 +54,13 @@ packages = [
 ]
 
 setup(
-    name='hyper',
+    name='hyper-up',
     version=version,
     description='HTTP/2 Client for Python',
     long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
-    author='Cory Benfield',
-    author_email='cory@lukasa.co.uk',
-    url='http://hyper.rtfd.org',
+    author='Eduard Vasanski',
+    author_email='eduard.vasanski@gmail.com',
+    url='https://github.com/vasanski/hyper',
     packages=packages,
     package_data={'': ['LICENSE', 'README.rst', 'CONTRIBUTORS.rst', 'HISTORY.rst', 'NOTICES']},
     package_dir={'hyper': 'hyper'},
@@ -78,7 +78,10 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
-    install_requires=['h2>=2.4,<3.0', 'hyperframe>=3.2,<4.0'],
+    install_requires=[
+        'h2>=2.4',
+        'hyperframe>=3.2'
+    ],
     tests_require=['pytest', 'requests', 'mock'],
     cmdclass={'test': PyTest},
     entry_points={
