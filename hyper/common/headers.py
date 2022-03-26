@@ -5,7 +5,7 @@ hyper/common/headers
 
 Contains hyper's structures for storing and working with HTTP headers.
 """
-import collections
+import collections.abc as collections
 
 from hyper.common.util import to_bytestring, to_bytestring_tuple
 
